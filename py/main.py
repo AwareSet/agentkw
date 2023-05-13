@@ -5,22 +5,6 @@ from gensim.summarization.summarizer import summarize
 from nltk import sent_tokenize
 from youtube_transcript_api import YouTubeTranscriptApi
 
-# the below is a function that takes in a video id and returns a summary of the video
-# also the below function saves the transcript of the video in a json file 
-# the below function is using the youtube_transcript_api library to get the transcript of the video
-# the below function is using the gensim library to summarize the transcript of the video
-# the below function is using the nltk library to tokenize the transcript of the video
-# the below function is using the json library to save the transcript of the video in a json file
-# the below function is using the os library to save the transcript of the video in a json file
-# the below function is using the pkg_resources library to save the transcript of the video in a json file
-# the below function is using the youtube_transcript_api library to save the transcript of the video in a json file
-# the input below is a video id 
-# the processing is to get the transcript of the video && tokenize the transcript of the video && summarize the transcript of the video && save the transcript of the video in a json file
-# the output is a summary of the video && a json file with the transcript of the video
-# the purpose of the below function is to get the transcript of the video && tokenize the transcript of the video && summarize the transcript of the video && save the transcript of the video in a json file
-# the below function is using the youtube_transcript_api library to get the transcript of the video
-# the below function is using the gensim library to summarize the transcript of the video
-
 # define a function called extract_transcript that takes in a video id as an argument
 
 def extract_transcript(video_id):
@@ -39,14 +23,6 @@ def extract_transcript(video_id):
     summary = summarize(transcript)
     # return the summary of the video let me explain return here means output means result means answer means response 
     return summary
-
-
-
-# explain the above function in your own words 
-# what is the purpose of the above function
-# what is the input of the above function
-# what is the output of the above function
-# what is the purpose of the above function
 
 
 # define a function called extract_transcripts_from_folder that takes in a folder path as an argument .. (folder path is a string) 
@@ -98,22 +74,7 @@ if __name__ == '__main__':
     # now to excute the above code run the below command in the terminal 
  # to run the above code in the terminal run the below command in the terminal 
  # python -m summay 
- 
- 
- # make requirment file for windoews users
-    # pip freeze > requirements.txt
-    # pip install -r requirements.txt
-    # pip install -r requirements.txt --upgrade
-    # pip install -r requirements.txt --upgrade --force-reinstall
-    # pip install -r requirements.txt --upgrade --force-reinstall --no-cache-dir
-    # pip install moudles needed for the above code 
-    # pip install gensim # gensim is a library that is used to summarize text
-    # pip install nltk # nltk is a library that is used to tokenize text
-    # pip install youtube_transcript_api # youtube_transcript_api is a library that is used to get the transcript of a youtube video
-    # pip install json # json is a library that is used to save the transcript of a youtube video in a json file
-    # pip install os # os is a library that is used to save the transcript of a youtube video in a json file
-    # pip install pkg_resources # pkg_resources is a library that is used to save the transcript of a youtube video in a json file
-    # pip install sent_tokenize # sent_tokenize is a function that is used to tokenize text
+
     
     
     #make pip cmd for all the ABOVE 
